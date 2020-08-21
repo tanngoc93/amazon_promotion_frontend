@@ -1,4 +1,8 @@
-# TheDogPaws.com
+## Code Status
+
+[![CircleCI](https://circleci.com/gh/tanngoc93/coupon-frontend.svg?style=shield)](https://circleci.com/gh/tanngoc93/coupon-frontend/tree/master) [![codecov](https://codecov.io/gh/tanngoc93/coupon-frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/tanngoc93/coupon-frontend)
+
+## TheDogPaws.com
 
 Dog blog is a dedicated dog news source, you can also find many pet supplies coupons
 
