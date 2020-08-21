@@ -1,0 +1,264 @@
+@import "fonts.css";
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700!important;
+  word-break: break-word!important;
+  margin-top: 1.5em!important;
+  margin-bottom: .8em!important;
+}
+
+
+/*
+** socialIcon
+*/
+
+a[class*='soc-']:before {
+  font-family: 'socicon';
+  font-size: 14px;
+  line-height: 1;
+}
+
+a[class*='soc-'].rounded-icon {
+  border-radius: 50%;
+}
+
+a.social-icon {
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  margin-left: 5px;
+}
+
+a.border-icon:before {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+a.border-icon {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-color: #fff;
+  padding: 10px 12px;
+  margin-top: 1.5em;
+  margin-bottom: .8em;
+}
+
+
+/* 
+** burgerButton
+*/
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+.bm-menu {
+  outline: none;
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+.bm-item {
+  outline: none;
+  padding: 12px 0;
+  display: inline-block;
+  border-bottom: 1px dotted #FAFAFA;
+}
+
+.bm-item.active {
+  color: #17a2b8;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* 
+** articleStyle
+*/
+
+.alignleft {
+  float: left;
+  margin: 5px 30px 15px 0;
+  max-width: 50%;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 15px 30px;
+  max-width: 50%;
+}
+
+.singlePost .wrapper>.content h2 {
+  font-size: 25px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .singlePost .wrapper>.content h2 {
+    font-size: 20px !important;
+  }
+}
+
+
+/* 
+** articleStyle => shopButton
+*/
+
+a.su-button span {
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+  padding: 0 !important;
+}
+
+a.su-button.su-button-style-default {
+  padding: 10px;
+  font-size: 16px;
+  font-family: Ubuntu;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: none;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  a.su-button span {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  a.su-button.su-button-style-default {
+    width: 440px;
+    padding: 11px;
+    margin-left: calc(50% - 220px);
+  }
+}
+
+
+/*
+** articleStyle => preParagraph
+*/
+
+pre {
+  font-family: 'Roboto', sans-serif;
+  background: #f2f0f0;
+  border-color: #ebebeb #ebebeb #ebebeb #c9dbef;
+  border-style: solid;
+  border-width: 1px 1px 1px 3px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 20px 0;
+  overflow: auto;
+  padding: 20px 25px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/*
+** articleStyle => tablePress
+*/
+
+table.tablepress {
+  width: 100%;
+}
+
+table.tablepress,
+table.tablepress th,
+table.tablepress td {
+  border: 1px solid black;
+}
+
+table.tablepress th,
+table.tablepress td {
+  padding: 5px 0;
+}
+
+table.tablepress th.column-1,
+table.tablepress td.column-1 {
+  width: 70%;
+  padding: 0 5px;
+}
+
+table.tablepress th.column-2,
+table.tablepress td.column-2 {
+  width: 12.5%;
+  text-align: center;
+}
+
+table.tablepress th.column-3,
+table.tablepress td.column-3 {
+  width: 22.5%;
+  text-align: center;
+}
+
+/*
+** articleStyle => rating
+*/
+
+span[class*='fa-star']:before {
+  color: orange;
+}

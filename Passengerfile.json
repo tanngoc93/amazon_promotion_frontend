@@ -1,0 +1,10 @@
+{
+  "port": 80,
+  "app_type": "node",
+  "log_file": "/home/app/html/tmp/log/passenger.log",
+  "pid_file": "/home/app/html/tmp/pids/passenger.pid",
+  "startup_file": "/home/app/html/server/index.js",
+  "static_files_dir": "/home/app/html/public",
+  "environment": "production",
+  "daemonize": false
+}

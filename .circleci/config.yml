@@ -1,0 +1,33 @@
+defaults: &defaults
+  working_directory: ~/buildbox
+  docker:
+    - image: circleci/node:10.16.3-browsers-legacy
+
+version: 2.0
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - setup_remote_docker
+
+      - run:
+          name: Login to Docker Registry
+          command: docker login -u $DOCKER_USER -p $DOCKER_PASS
+
+      - run:
+          name: Build Docker Image
+          command: docker build -t tanngoc93/com.thedogpaws:latest .
+
+      - run:
+          name: Push Docker Image to Docker Registry 
+          command: docker push tanngoc93/com.thedogpaws:latest
+
+workflows:
+  version: 2
+  build-image:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master

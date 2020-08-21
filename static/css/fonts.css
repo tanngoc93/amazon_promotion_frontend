@@ -1,0 +1,92 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:400,500,700";
+@import "https://fonts.googleapis.com/css?family=Amatic+SC:400,500,700";
+
+@font-face {
+  font-family: "socicon";
+  src: url(../fonts/socicon.eot);
+  src: url(../fonts/socicon.eot?#iefix) format("embedded-opentype"), url(../fonts/socicon.woff) format("woff"), url(../fonts/socicon.ttf) format("truetype"), url(../fonts/socicon.svg#socicon) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+.soc-instagram:before {
+  content: "\e057"
+}
+
+.soc-facebook:before {
+  content: "\e041"
+}
+
+.soc-pinterest:before {
+  content: "\e043"
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(../fonts/fontawesome-webfont.eot?v=4.6.3);
+  src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3) format("embedded-opentype"), url(../fonts/fontawesome-webfont.woff2?v=4.6.3) format("woff2"), url(../fonts/fontawesome-webfont.woff?v=4.6.3) format("woff"), url(../fonts/fontawesome-webfont.ttf?v=4.6.3) format("truetype"), url(../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: 'FontAwesome'!important;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.fa-link:before {
+  content: "\f0c1"
+}
+
+.fa-user:before {
+  content: "\f007"
+}
+
+.fa-angle-left:before {
+  content: "\f104"
+}
+
+.fa-angle-right:before {
+  content: "\f105"
+}
+
+.fa-map-marker:before {
+  content: "\f041"
+}
+
+.fa-envelope:before {
+  content: "\f0e0"
+}
+
+.fa-internet-explorer:before {
+  content: "\f26b"
+}
+
+.fa-comment:before {
+  content: "\f075"
+}
+
+.fa-copy:before {
+  content: "\f0c5"
+}
+
+.fa-star:before{
+  content:"\f005"
+}
+
+.fa-star-o:before{
+  content:"\f006"
+}
+
+.fa-star-half:before{
+  content:"\f089"
+}
+
+.fa-star-half-o:before{
+  content:"\f123"
+}
