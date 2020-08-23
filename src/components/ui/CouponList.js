@@ -8,26 +8,46 @@ import { connect } from "react-redux"
 
 class CouponList extends React.Component {
   state = {
-    perPage: 12,
-    category: null
+    perPage: 12
   }
 
-  handleLoading (per, category) {
-    let { meta, requestCoupons } = this.props
+  onLoading (category, page) {
+    this.props.requestCoupons(
+      page,
+      this.state.perPage,
+      this.setCategory(category)
+    )
+  }
 
-    if (this.state.category !== category) {
-      meta = null; this.setState({ category })
+  setCategory (category, defaultValue = "any") {
+    if (category === undefined) {
+      return defaultValue
     }
 
-    requestCoupons((meta === null) ? 1 : meta.next_page, per, category)
+    return category
+  }
+
+  setNextPage (meta, defaultValue = 1) {
+    if (meta === null) {
+      return defaultValue
+    }
+
+    return meta.next_page
   }
 
   render () {
-    const { perPage: per, category } = this.state
-    const { categories, coupons, meta, hasMore, asPath } = this.props
-    const { debug, token } = getParams(asPath)
+    const {
+      meta,
+      coupons,
+      hasMore,
+      asPath
+    } = this.props
 
-    const currentTime = moment().format()
+    const {
+      debug,
+      token,
+      category
+    } = getParams(asPath)
 
     return (
       <div>
@@ -35,31 +55,13 @@ class CouponList extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
-                <div className="mod-filter">
-                  <select
-                    defaultValue="1"
-                    className="custom-select"
-                    onChange={(e) => this.handleLoading(per, e.target.value)}
-                  >
-                    {
-                      categories &&
-                        categories.map((category, index) => {
-                          return (
-                            <option key={index} value={category.id}>
-                              {category.name}
-                            </option>
-                          )
-                        })
-                    }
-                  </select>
-                </div>
-              </div>
-              <div className="col-sm-12">
                 <InfiniteScroll
                   pageStart={0}
-                  hasMore={hasMore}
+                  hasMore={
+                    hasMore
+                  }
                   loadMore={
-                    () => this.handleLoading(per, category)
+                    () => this.onLoading(category, this.setNextPage(meta))
                   }
                   loader={
                     <div
@@ -83,7 +85,7 @@ class CouponList extends React.Component {
                               key={index}
                               debug={debug}
                               token={token}
-                              currentTime={currentTime}
+                              currentTime={moment().format()}
                               coupon={coupon}
                             />
                           )
@@ -181,7 +183,7 @@ class CouponList extends React.Component {
 
           @media (min-width: 992px) {
             .coupons {
-              padding: 60px 0;
+              padding: 20px 0 20px 0;
             }
           }
 
@@ -226,9 +228,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(
-  mapStateToProps,
-  {
-    requestCoupons
-  }
-)(CouponList)
+export default connect(mapStateToProps, { requestCoupons })(CouponList)

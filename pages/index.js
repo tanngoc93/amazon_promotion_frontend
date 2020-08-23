@@ -10,11 +10,7 @@ import "react-toastify/dist/ReactToastify.css"
 class Index extends React.Component {
 
   static async getInitialProps ({ ctx }) {
-    const res = await fetch(`${config.couponAPI}/categories`)
-    const { categories } = await res.json()
-
     return {
-      categories,
       asPath: ctx.asPath
     }
   }
@@ -25,7 +21,7 @@ class Index extends React.Component {
     return (
       <Layout
         asPath={asPath}
-        body={Body({ categories, asPath })}
+        body={Body({ asPath })}
         title={config.site.couponPageTitle}
         description={config.site.couponPageDescription} />
     )
@@ -33,12 +29,11 @@ class Index extends React.Component {
 }
 
 const Body = (props) =>  {
-  const { categories, asPath } = props
+  const { asPath } = props
 
   return (
     <CouponList
-      asPath={asPath}
-      categories={categories} />
+      asPath={asPath} />
   )
 }
 

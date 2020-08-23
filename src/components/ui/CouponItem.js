@@ -30,17 +30,17 @@ class CouponItem extends React.Component {
   }
 
   render () {
-    // ********************* //
+    // *********************************** //
     const { debug,
             token,
             coupon,
             currentTime,
             deleteCoupon } = this.props
-    // ********************* //
+    // *********************************** //
     const { expires_at } = coupon
-    // ********************* //
+    // *********************************** //
     const expiration = moment(expires_at)
-    // ********************* //
+    // *********************************** //
     const diff = expiration.diff(currentTime)
     // Express as a duration //
     const diffDuration = moment.duration(diff)

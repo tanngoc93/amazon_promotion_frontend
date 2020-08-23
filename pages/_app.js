@@ -22,14 +22,21 @@ class MyApp extends App {
       pageProps = await Component.getInitialProps({ ctx })
     }
 
+    const res = await fetch(`${config.couponAPI}/categories`)
+
+    const {
+      categories
+    } = await res.json()
+
     return {
       pageProps,
+      categories,
       asPath: ctx.asPath
     }
   }
 
   render () {
-    const { store, asPath, pageProps, Component } = this.props
+    const { store, categories, asPath, pageProps, Component } = this.props
 
     return (
       <Container>
@@ -37,6 +44,7 @@ class MyApp extends App {
           <div>
             <Header
               asPath={asPath}
+              categories={categories}
             />
 
             <Component {...pageProps} />

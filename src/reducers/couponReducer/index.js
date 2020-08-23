@@ -9,9 +9,13 @@ const initState = {
 }
 
 const couponReducer = (state = initState, action) => {
-  let { category, coupons, hasMore } = { ...state }
+  let {
+    category,
+    coupons,
+    hasMore
+  } = { ...state }
 
-  hasMore = action.meta && action.meta.next_page === null ? false : true
+  hasMore = setHasMore(action)
 
   if (action.category === null) {
     coupons = coupons.concat(action.coupons)
@@ -41,6 +45,14 @@ const couponReducer = (state = initState, action) => {
     default:
       return state
   }
+}
+
+const setHasMore = (action) => {
+  if (action.meta && action.meta.next_page === null) {
+    return false
+  }
+
+  return true
 }
 
 export { couponReducer }

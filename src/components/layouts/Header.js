@@ -2,10 +2,14 @@ import classnames from "classnames"
 import config from "../../reactpress/services/publicConfig"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import { slide as Menu } from "react-burger-menu"
+import { getParams } from "../../utils/commons"
+import { Router } from "../../../server/routes"
+import { requestCoupons } from "../../actions"
+import { connect } from "react-redux"
 
 var styles = {
   bmBurgerButton: {
-    left: '28px',
+    left: '20px',
   },
   bmBurgerBars: {
     background: '#2ea3f2'
@@ -14,24 +18,51 @@ var styles = {
 
 class Header extends React.Component {
   state = {
-    zIndex: 1000
+    perPage: 12
   }
 
-  isMenuOpen (state) {
-    const zIndex = state.isOpen ? 9999 : 1000
+  onSelect (category, page = 1) {
 
-    if (zIndex === 9999) {
-      return this.setState({ zIndex })
+    const pathname = config.assetPrefix || "/"
+
+    Router.push({
+      pathname: pathname,
+      query: {
+        category: `${category}`,
+        page: `${page}`
+      }
+    })
+
+    this.onLoading(category, page)
+  }
+
+  onLoading (category, page) {
+    this.props.requestCoupons(
+      page,
+      this.state.perPage,
+      this.setCategory(category)
+    )
+  }
+
+  setCategory (category, defaultValue = "any") {
+    if (category === undefined) {
+      return defaultValue
     }
 
-    setTimeout(() => {
-      this.setState({ zIndex })
-    }, 300)
+    return category
   }
 
   render () {
 
-    const { zIndex } = this.state
+    const {
+      meta,
+      categories,
+      asPath
+    } = this.props
+
+    const {
+      category
+    } = getParams(asPath)
 
     return (
       <div>
@@ -42,15 +73,15 @@ class Header extends React.Component {
                 <div className="header_mainmenu display_table_cell">
                   <ul className="nav">
                     {
-                      config.mainMenus.map(item => {
+                      config.mainMenus.map((item, index) => {
                         const { route: pathname } = item
 
                         if (item.enable) {
                           if (item.isLogo) {
                             return (
                               <li
+                                key={index}
                                 className="centered-inline-logo-wrap"
-                                key={pathname}
                               >
                                 <div className="logo_container">
                                   <a
@@ -83,45 +114,90 @@ class Header extends React.Component {
                     <span></span>
                   </span>
                 </div>
-                
               </div>
             </div>
           </div>
         </header>
+        <div className="mod-filter-dk">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 display_table">
+                <select
+                  className="custom-select"
+                  onChange={
+                    (e) => this.onSelect(e.target.value)
+                  }
+                  value={ this.setCategory(category) }
+                >
+
+                  <option key="default" value="any">
+                    Categories
+                  </option>
+
+                  {
+                    categories && categories.map((item, index) => {
+                      return (
+                        <option key={item.name} value={item.id}>
+                          {item.name}
+                        </option>
+                      )
+                    })
+                  }
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
         <header className="page_header_mb">
-          <Menu onStateChange={(e) => this.isMenuOpen(e)} styles={ styles }>
+          <Menu styles={ styles }>
             {
-              config.mainMenus.map(item => {
+              config.mainMenus.map((item, index) => {
                 const { route: pathname } = item
 
                 if (item.enable) {
-                  if (item.isLogo) {
-                    return (
+                  if (!item.isLogo) {
+                    return(
                       <a
-                        key={pathname}
+                        key={index}
                         href={pathname}
-                        className="mb_menu_item text-uppercase"
+                        className={classnames("mb_menu_item text-uppercase", {
+                          active: pathname == "/coupons"
+                        })}
                       >
-                        Go Homepage
+                        {item.title}
                       </a>
                     )
                   }
-
-                  return(
-                    <a
-                      key={pathname}
-                      href={pathname}
-                      className={classnames("mb_menu_item text-uppercase", {
-                        active: pathname == "/coupons"
-                      })}
-                    >
-                      {item.title}
-                    </a>
-                  )
                 }
               })
             }
           </Menu>
+          <div>
+            <div className="mod-filter-mb">
+              <select
+                className="custom-select"
+                onChange={
+                  (e) => this.onSelect(e.target.value)
+                }
+                value={ this.setCategory(category) }
+              >
+
+                <option key="default" value="any">
+                  Categories
+                </option>
+
+                {
+                  categories && categories.map((category, index) => {
+                    return (
+                      <option key={category.name} value={category.id}>
+                        {category.name}
+                      </option>
+                    )
+                  })
+                }
+              </select>
+            </div>
+          </div>
         </header>
         <style jsx>{`
           * {
@@ -215,7 +291,7 @@ class Header extends React.Component {
           .page_topline {
             font-size: 14px;
             position: relative;
-            z-index: 1001;
+            z-index: 999;
           }
 
           .page_topline .divided-content>* {
@@ -272,7 +348,7 @@ class Header extends React.Component {
             left: 0;
             right: 0;
             position: relative;
-            z-index: 1000;
+            z-index: 999;
             margin: 0;
             padding: 0;
             height: auto;
@@ -287,7 +363,6 @@ class Header extends React.Component {
             right: 0;
             top: 0;
             background-color: #e5e5e5;
-            z-index: 1;
           }
 
           .page_header:after {
@@ -299,7 +374,6 @@ class Header extends React.Component {
             right: 0;
             bottom: 0;
             background-color: #e5e5e5;
-            z-index: 1;
           }
 
           .page_header .header_mainmenu {
@@ -362,10 +436,35 @@ class Header extends React.Component {
             margin-bottom: 0;
           }
 
+          .custom-select {
+            width: 100%;
+            position: relative;
+            font-family: 'Amatic SC', handwriting;
+            font-size: 1.4rem;
+            font-weight: 8  00;
+          }
+
+          .mod-filter-dk .custom-select {
+            width: 300px;
+            float: right;
+            margin-top: 20px;
+          }
+
+          .mod-filter-mb {
+            position: relative;
+            float: right;
+            right: 20px;
+            top: 27px;
+          }
+
+          .mod-filter-mb .custom-select {
+            width: 250px;
+          }
+
           @media (max-width: 767px) {
             .page_topline,
             .page_toplogo,
-            .page_header {
+            .page_header, .mod-filter-dk {
               display: none;
             }
 
@@ -452,11 +551,15 @@ class Header extends React.Component {
           }
 
           @media (max-width: 980px) {
+            .mod-filter-dk {
+              display: none;
+            }
+
             .page_header_mb {
               position: fixed;
               top: 0px;
               width: 100%;
-              z-index: ${zIndex};
+              z-index: 999;
               border-bottom: 0.5px solid #17a2b8;
               background-color: #FAFAFA;
               min-height: 100px;
@@ -479,4 +582,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+export default connect(null, { requestCoupons })(Header)

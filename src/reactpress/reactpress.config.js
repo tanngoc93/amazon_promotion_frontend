@@ -13,14 +13,8 @@ module.exports = {
   },
   mainMenus: [
     {
-      title: "TIPS & CARE",
-      route: "/category/tips-and-care/",
-      enable: true,
-      isLogo: false
-    },
-    {
-      title: "NUTRITION",
-      route: "/category/nutrition/",
+      title: "BLOG",
+      route: "/",
       enable: true,
       isLogo: false
     },
@@ -32,13 +26,7 @@ module.exports = {
       isLogo: true
     },
     {
-      title: "DOG SUPPLIES",
-      route: "/category/dog-supplies/",
-      enable: true,
-      isLogo: false
-    },
-    {
-      title: "DOG COUPONS",
+      title: "HOT COUPONS",
       route: "/coupons",
       enable: true,
       isLogo: false
