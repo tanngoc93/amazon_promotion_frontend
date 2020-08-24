@@ -16,12 +16,17 @@ class Index extends React.Component {
   }
 
   render () {
-    const { page, categories, asPath } = this.props
+    const {
+      page,
+      asPath
+    } = this.props
 
     return (
       <Layout
         asPath={asPath}
-        body={Body({ asPath })}
+        body={
+          Body({ asPath })
+        }
         title={config.site.couponPageTitle}
         description={config.site.couponPageDescription} />
     )

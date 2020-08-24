@@ -1,6 +1,14 @@
-import { combineReducers } from 'redux'
-import { couponReducer } from './couponReducer'
-import { commentReducer } from './commentReducer'
+import {
+  combineReducers
+} from 'redux'
+
+import {
+  couponReducer
+} from './couponReducer'
+
+import {
+  commentReducer
+} from './commentReducer'
 
 // We combine the reducers here so that they
 // can be left split apart above

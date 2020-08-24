@@ -1,2 +1,8 @@
-export { newCommentAPI } from './commentService'
-export { getCouponsAPI, deleteCouponAPI } from './couponService'
+export {
+  newCommentAPI
+} from './commentService'
+
+export {
+  getCouponsAPI,
+  deleteCouponAPI
+} from './couponService'

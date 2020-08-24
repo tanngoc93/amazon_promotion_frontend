@@ -1,4 +1,6 @@
-import { AllHtmlEntities } from "html-entities"
+import {
+  AllHtmlEntities
+} from "html-entities"
 
 export function decode (string) {
   return string ? new AllHtmlEntities().decode(string.replace(/<(?:.|\n)*?>/gm, '')) : "We are DOG LOVERS"

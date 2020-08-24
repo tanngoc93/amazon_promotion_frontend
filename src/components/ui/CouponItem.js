@@ -15,7 +15,7 @@ const onSuccess = () => {
 class CouponItem extends React.Component {
   state = {
     isDisabled: false,
-    btnTitle: "Delete"
+    btnTitle: "DELETE"
   }
 
   handleClick (id, token) {
@@ -23,7 +23,7 @@ class CouponItem extends React.Component {
 
     this.setState({
       isDisabled: true,
-      btnTitle: "Deleted"
+      btnTitle: "DELETED"
     })
 
     deleteCoupon(id, token)
@@ -218,8 +218,4 @@ class CouponItem extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return {}
-}
-
-export default connect(mapStateToProps, { deleteCoupon })(CouponItem)
+export default connect(null, { deleteCoupon })(CouponItem)
