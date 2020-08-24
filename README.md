@@ -8,57 +8,22 @@ Dog blog is a dedicated dog news source, you can also find many pet supplies cou
 
 ### Prerequisites
 
-Use NVM
-
 Node version: 10.x
-
-Ruby version: 2.6.x
 
 Docker/Docker Compose(Optional)
 
-## Built With
+## Built with
 
 * [Rails](https://rubyonrails.org/) - API for coupon service
-* [WordPress](https://wordpress.org/download/) - API for blog service
+* [WordPress](https://wordpress.org/) - API for blog service
 * [NextJS](https://nextjs.org/) - The React Framework for server side rendering
 * [Redux Saga](https://redux-saga.js.org/) - The library that aims to make application side effects
-* [ExpressJS](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
-* [Passenger](https://www.phusionpassenger.com/docs/advanced_guides/developing_with_passenger/ruby/) - Passenger is a web application server
-* [Nginx](https://www.nginx.com/) - Nginx is a free, open-source, high-performance HTTP server and reverse proxy
-* [Capistrano](https://capistranorb.com/) - A remote server automation and deployment tool written in Ruby
+* [Passenger](https://www.phusionpassenger.com/) - Passenger is a web application server
+* [Traefik](https://containo.us/traefik/) - Traefik is an open-source Edge Router that makes publishing your services a fun and easy experience
+* [Docker](https://docs.docker.com/) - That use OS-level virtualization to deliver software in packages called containers
+* [Docker Swarm](https://docs.docker.com/engine/swarm/) - Cluster management integrated with Docker Engine
 * [Cloudflare](https://www.cloudflare.com/) - CDN services, DDoS mitigation, Internet security and distributed domain name server
-
-## Rating Tags
-```html
-<!-- 3.5 STAR -->
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star-half-o"></span>
-<span class="fa fa-star-o"></span>
-
-<!-- 4 STAR -->
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star-o"></span>
-
-<!-- 4.5 STAR -->
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star-half-o"></span>
-
-<!-- 5 STAR -->
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-
-```
+* [CircleCI](https://circleci.com/) - Continuous Integration and Delivery
 
 ## Authors
 
