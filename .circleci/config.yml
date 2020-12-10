@@ -6,7 +6,6 @@ defaults: &defaults
 version: 2.0
 jobs:
   build:
-    <<: *defaults
     steps:
       - checkout
       - setup_remote_docker:
