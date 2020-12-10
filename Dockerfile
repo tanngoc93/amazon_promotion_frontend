@@ -17,7 +17,7 @@ ADD package.json $APP_DIR/package.json
 ADD yarn.lock $APP_DIR/yarn.lock
 RUN yarn install --production=true
 
-COPY --chown=app:app . $APP_DIR
+COPY . $APP_DIR
 
 RUN yarn build
 
