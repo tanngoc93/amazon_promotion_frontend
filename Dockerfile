@@ -15,7 +15,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
 
 ADD package.json $APP_DIR/package.json
 ADD yarn.lock $APP_DIR/yarn.lock
-RUN yarn cache clean && yarn install --production=true
+RUN yarn install --production=true
 
 COPY --chown=app:app . $APP_DIR
 
