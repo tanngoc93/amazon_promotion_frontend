@@ -31,11 +31,13 @@ class CouponItem extends React.Component {
 
   render () {
     // *********************************** //
-    const { debug,
+    const {
+            debug,
             token,
             coupon,
             currentTime,
-            deleteCoupon } = this.props
+            deleteCoupon
+          } = this.props
     // *********************************** //
     const { expires_at } = coupon
     // *********************************** //
@@ -76,12 +78,14 @@ class CouponItem extends React.Component {
                   style={{
                     margin: "0px",
                     padding: "0px",
+                    fontSize: "unset",
                     boxShadow: "none",
                     background: "none",
-                    fontSize: "unset",
                     backgroundColor: "transparent",
                     color: "#FAFAFA",
+                    outline: "none",
                     border: "none"
+
                   }}
                   data-clipboard-text={coupon.code}
                   onSuccess={() => onSuccess()}
@@ -131,12 +135,10 @@ class CouponItem extends React.Component {
           }
 
           .coupon .featuredImg {
-            opacity: 0.5;
             background-size: 100%;
-            background-position-y: 20px;
             background-repeat: no-repeat;
-            background-image: url(${config.assetPrefix}/static/images/shopping-cart.jpg);
-            min-height: 288.5px !important;
+            background-image: url(${config.assetPrefix}/static/images/featuredImg.jpg);
+            min-height: 250px !important;
           }
 
           .coupon .content {
