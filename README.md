@@ -1,6 +1,6 @@
 ## Code Status
 
-[![CircleCI](https://circleci.com/gh/tanngoc93/coupon-frontend.svg?style=shield)](https://circleci.com/gh/tanngoc93/coupon-frontend/tree/master) [![codecov](https://codecov.io/gh/tanngoc93/coupon-frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/tanngoc93/coupon-frontend)
+[![CircleCI](https://circleci.com/gh/tanngoc93/CouponFrontend.svg?style=shield)](https://circleci.com/gh/tanngoc93/CouponFrontend/tree/master) [![codecov](https://codecov.io/gh/tanngoc93/CouponFrontend/branch/master/graph/badge.svg)](https://codecov.io/gh/tanngoc93/CouponFrontend)
 
 ## TheDogPaws.com/Coupons
 
