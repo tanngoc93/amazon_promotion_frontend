@@ -66,7 +66,7 @@ const Footer = (props) => {
                 <h5 className="widget-title">Amazon Associates Program</h5>
                 <div className="widget_text">
                   <font size="2">
-                    <a href="http://thedogpaws.com">TheDogPaws.com</a> is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a href="http://amazon.com" rel="nofollow">Amazon.com</a>. Amazon, the Amazon logo, AmazonSupply, and the AmazonSupply logo are trademarks of <a href="http://amazon.com" rel="nofollow">Amazon.com</a>, Inc. or its affiliates.<hr />Additionally, <a href="http://TheDogPaws.com" rel="nofollow"><span>TheDogPaws</span><span>.</span><span>com</span></a> participates in various other affiliate programs, and we sometimes get a commission through purchases made through our links.
+                    We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a href="http://amazon.com" rel="nofollow">Amazon.com</a>. Amazon, the Amazon logo, AmazonSupply, and the AmazonSupply logo are trademarks of <a href="http://amazon.com" rel="nofollow">Amazon.com</a>, Inc. or its affiliates.<hr />Additionally, we also participate in various other affiliate programs, and we sometimes get a commission through purchases made through our links.
                   </font>
                 </div>
               </div>
