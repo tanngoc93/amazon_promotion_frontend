@@ -47,6 +47,14 @@ class MyDocument extends Document {
           ></noscript>
           <Main />
           <NextScript />
+          <div id="fb-root"></div>
+          <div className="fb-customerchat"
+            attribution="setup_tool"
+            page_id="1619179571426959"
+            theme_color="#ff7e29"
+            logged_in_greeting="Hi! How can we help you?"
+            logged_out_greeting="Hi! How can we help you?">
+          </div>
           <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" />
         </body>
       </Html>
