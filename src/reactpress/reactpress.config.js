@@ -13,23 +13,11 @@ module.exports = {
   },
   mainMenus: [
     {
-      title: "BLOG",
-      route: "/",
-      enable: true,
-      isLogo: false
-    },
-    {
-      title: "www.TheDogPaws.com",
+      title: "www.TooCoolCats.com",
       route: "/",
       image: process.env.SITE_LOGO,
       enable: true,
       isLogo: true
-    },
-    {
-      title: "HOT COUPONS",
-      route: "/coupons",
-      enable: true,
-      isLogo: false
     }
   ]
 }

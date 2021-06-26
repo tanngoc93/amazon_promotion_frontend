@@ -26,9 +26,9 @@ const Footer = (props) => {
                     <div className="media-body media-middle">
                       <a
                         target="_blank"
-                        href="https://goo.gl/maps/dXC7y9yuhmaRyL8NA"
+                        href="https://goo.gl/maps/K9R6kGjyqyw4r4BG7"
                       >
-                        3501 Jack Northrop Ave, Suite #LV402
+                        1309 Coffeen Ave STE 1200, Sheridan
                       </a>
                     </div>
                   </div>
@@ -39,9 +39,9 @@ const Footer = (props) => {
                     <div className="media-body media-middle color3">
                       <a
                         target="_blank"
-                        href="mailto:support@thedogpaws.com"
+                        href="mailto:support@toocoolcats.com"
                       >
-                        support@thedogpaws.com
+                        support@toocoolcats.com
                       </a>
                     </div>
                   </div>
@@ -50,14 +50,14 @@ const Footer = (props) => {
                       <i className="fa fa-internet-explorer" aria-hidden="true"></i>
                     </div>
                     <div className="media-body media-middle color3">
-                      <a href='/'>www.thedogpaws.com</a>
+                      <a href='/'>www.toocoolcats.com</a>
                     </div>
                   </div>
                 </div>
                 <div className="margin-top-15">
-                  <a href="#" className="social-icon border-icon rounded-icon soc-facebook"  target="_blank" href="https://www.facebook.com/thedogpawsdotcom/"></a>
-                  <a href="#" className="social-icon border-icon rounded-icon soc-instagram" target="_blank" href="https://www.instagram.com/thedogpawsdotcom/"></a>
-                  <a href="#" className="social-icon border-icon rounded-icon soc-pinterest" target="_blank" href="https://www.pinterest.com/thedogpawsdotcom/"></a>
+                  <a href="#" className="social-icon border-icon rounded-icon soc-facebook"  target="_blank" href="https://www.facebook.com/toocoolcatss/"></a>
+                  <a href="#" className="social-icon border-icon rounded-icon soc-instagram" target="_blank" href="https://www.instagram.com/toocoolcats/"></a>
+                  <a href="#" className="social-icon border-icon rounded-icon soc-pinterest" target="_blank" href="https://www.pinterest.com/toocoolcats/"></a>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ const Footer = (props) => {
                 <h5 className="widget-title">Amazon Associates Program</h5>
                 <div className="widget_text">
                   <font size="2">
-                    We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a href="http://amazon.com" rel="nofollow">Amazon.com</a>. Amazon, the Amazon logo, AmazonSupply, and the AmazonSupply logo are trademarks of <a href="http://amazon.com" rel="nofollow">Amazon.com</a>, Inc. or its affiliates.<hr />Additionally, we also participate in various other affiliate programs, and we sometimes get a commission through purchases made through our links.
+                    <a href="http://toocoolcats.com">TooCoolCats.com</a> is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a href="http://amazon.com" rel="nofollow">Amazon.com</a>. Amazon, the Amazon logo, AmazonSupply, and the AmazonSupply logo are trademarks of <a href="http://amazon.com" rel="nofollow">Amazon.com</a>, Inc. or its affiliates.<hr />Additionally, <a href="http://toocoolcats.com" rel="nofollow"><span>toocoolcats</span><span>.</span><span>com</span></a> participates in various other affiliate programs, and we sometimes get a commission through purchases made through our links.
                   </font>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const Footer = (props) => {
                 <h5 className="widget-title">Disclaimer</h5>
                 <div className="widget_text">
                   <font size="2">
-                    The website does not intend to provide veterinary advice. We go to great lengths to help users better understand their dogs; however, the content on this blog is not a substitute for veterinary guidance. For more information, please read our: <a href="https://thedogpaws.com/page/privacy-policy/">Privacy Policy &amp; Disclaimer</a>.
+                    The website does not intend to provide veterinary advice. We go to great lengths to help users better understand their dogs; however, the content on this blog is not a substitute for veterinary guidance. For more information, please read our: <a href="https://toocoolcats.com/pages/privacy-policy/">Privacy Policy &amp; Disclaimer</a>.
                   </font>
                 </div>
               </div>
@@ -84,7 +84,7 @@ const Footer = (props) => {
                 <h5 className="widget-title">Privacy & Cookies</h5>
                 <div className="widget_text">
                   <font size="2">
-                    This site uses cookies. By continuing to use this website, you agree to their use. To find out more, including how to control cookies, see here: <a href="https://www.thedogpaws.com/page/privacy-policy/">Privacy Policy &amp; Disclaimer </a>
+                    This site uses cookies. By continuing to use this website, you agree to their use. To find out more, including how to control cookies, see here: <a href="https://www.toocoolcats.com/pages/privacy-policy/">Privacy Policy &amp; Disclaimer </a>
                   </font>
                 </div>
               </div>
