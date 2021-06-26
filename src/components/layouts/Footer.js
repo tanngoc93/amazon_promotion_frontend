@@ -50,7 +50,7 @@ const Footer = (props) => {
                       <i className="fa fa-internet-explorer" aria-hidden="true"></i>
                     </div>
                     <div className="media-body media-middle color3">
-                      <a href='/'>www.toocoolcats.com</a>
+                      <a href='https//toocoolcats.com/'>www.toocoolcats.com</a>
                     </div>
                   </div>
                 </div>
