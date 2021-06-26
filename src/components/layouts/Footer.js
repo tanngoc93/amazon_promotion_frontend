@@ -28,7 +28,7 @@ const Footer = (props) => {
                         target="_blank"
                         href="https://goo.gl/maps/K9R6kGjyqyw4r4BG7"
                       >
-                        1309 Coffeen Ave STE 1200, Sheridan
+                        1309 Coffeen Ave STE 1200, Sheridan<br/>WY 82801, United States
                       </a>
                     </div>
                   </div>
@@ -66,7 +66,7 @@ const Footer = (props) => {
                 <h5 className="widget-title">Amazon Associates Program</h5>
                 <div className="widget_text">
                   <font size="2">
-                    <a href="http://toocoolcats.com">TooCoolCats.com</a> is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a href="http://amazon.com" rel="nofollow">Amazon.com</a>. Amazon, the Amazon logo, AmazonSupply, and the AmazonSupply logo are trademarks of <a href="http://amazon.com" rel="nofollow">Amazon.com</a>, Inc. or its affiliates.<hr />Additionally, <a href="http://toocoolcats.com" rel="nofollow"><span>toocoolcats</span><span>.</span><span>com</span></a> participates in various other affiliate programs, and we sometimes get a commission through purchases made through our links.
+                    <a href="http://toocoolcats.com">TooCoolCats.com</a> is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a href="http://amazon.com" rel="nofollow">Amazon.com</a>. Amazon, the Amazon logo, AmazonSupply, and the AmazonSupply logo are trademarks of <a href="http://amazon.com" rel="nofollow">Amazon.com</a>, Inc. or its affiliates.<hr />Additionally, <a href="http://toocoolcats.com" rel="nofollow"><span>TooCoolCats</span><span>.</span><span>com</span></a> participates in various other affiliate programs, and we sometimes get a commission through purchases made through our links.
                   </font>
                 </div>
               </div>

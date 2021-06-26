@@ -2,9 +2,9 @@
 
 [![CircleCI](https://circleci.com/gh/tanngoc93/CouponFrontend.svg?style=shield)](https://circleci.com/gh/tanngoc93/CouponFrontend/tree/master) [![codecov](https://codecov.io/gh/tanngoc93/CouponFrontend/branch/master/graph/badge.svg)](https://codecov.io/gh/tanngoc93/CouponFrontend)
 
-## TheDogPaws.com/Coupons
+## Visit [Coupon.TooCoolCats.com/](https://coupon.toocoolcats.com/)
 
-Dog blog is a dedicated dog news source, you can also find many pet supplies coupons
+Pet blog is a dedicated dog news source, you can also find many Pet supplies's discount codes
 
 ### Prerequisites
 
