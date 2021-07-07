@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/tanngoc93/CouponFrontend.svg?style=shield)](https://circleci.com/gh/tanngoc93/CouponFrontend/tree/master) [![codecov](https://codecov.io/gh/tanngoc93/CouponFrontend/branch/master/graph/badge.svg)](https://codecov.io/gh/tanngoc93/CouponFrontend)
 
-## Visit [TooCoolCats.com/Coupons](https://toocoolcats.com/coupons/)
+## Visit [Demo.TooCoolCats.com/Coupons](https://demo.toocoolcats.com/coupons/)
 
 Pet blog is a dedicated dog news source, you can also find many Pet supplies's discount codes
 
