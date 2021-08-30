@@ -1,8 +1,8 @@
 module.exports = {
   // used by ./services/wpapi to create api url
-  assetPrefix: process.env.PREFIX,
-  couponAPI: process.env.COUPON_API,
   blogAPI: process.env.BLOG_API,
+  couponAPI: process.env.COUPON_API,
+  assetPrefix: process.env.PREFIX,
   site: {
     name: process.env.SITE_NAME,
     logo: process.env.SITE_LOGO,
@@ -14,7 +14,7 @@ module.exports = {
   mainMenus: [
     {
       title: "www.TooCoolCats.com",
-      route: "/",
+      route: "https://toocoolcats.com/",
       image: process.env.SITE_LOGO,
       enable: true,
       isLogo: true
