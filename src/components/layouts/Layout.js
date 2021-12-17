@@ -3,12 +3,11 @@ import config from "../../reactpress/services/publicConfig"
 import { decode } from "../../utils/commons"
 import { connect } from "react-redux"
 
+import React from "react"
+
 class Layout extends React.Component {
-
   render() {
-
     const title = `${decode(this.props.title)} - ${config.site.name}`
-
     return (
       <div>
         <Head>

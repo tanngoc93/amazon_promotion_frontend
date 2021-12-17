@@ -12,6 +12,8 @@ const onSuccess = () => {
   toast.success('Successfully copied...')
 }
 
+import React from "react"
+
 class CouponItem extends React.Component {
   state = {
     isDisabled: false,

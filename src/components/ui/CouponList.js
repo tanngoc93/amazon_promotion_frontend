@@ -6,6 +6,8 @@ import { requestCoupons } from "../../actions"
 import { FadeLoader } from "react-spinners"
 import { connect } from "react-redux"
 
+import React from "react"
+
 class CouponList extends React.Component {
   state = {
     perPage: 12

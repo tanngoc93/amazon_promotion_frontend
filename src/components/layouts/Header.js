@@ -16,6 +16,8 @@ var styles = {
   }
 }
 
+import React from "react"
+
 class Header extends React.Component {
   state = {
     perPage: 12

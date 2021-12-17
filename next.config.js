@@ -1,7 +1,5 @@
 const webpack = require("webpack")
 const withImages = require("next-images")
-const withCSS = require("@zeit/next-css")
-const withSass = require("@zeit/next-sass")
 const withComposePlugins = require("next-compose-plugins")
 const withReactPressPlugin = require("./src/reactpress/plugins/reactpress")
 const withPressConfig = require("./src/reactpress/reactpress.config")
@@ -26,5 +24,5 @@ const nextConfig = {
 
 module.exports =
   withComposePlugins(
-    [withCSS, withSass, withReactPressPlugin], nextConfig
+    [withReactPressPlugin], nextConfig
   )

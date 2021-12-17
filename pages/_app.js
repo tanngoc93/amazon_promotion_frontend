@@ -1,7 +1,7 @@
 import React from "react"
 import Router from "next/router"
 import { Provider } from "react-redux"
-import App, { Container } from "next/app"
+import App from "next/app"
 import configureStore from "../src/store"
 import withRedux from "next-redux-wrapper"
 import withReduxSaga from "next-redux-saga"
@@ -39,7 +39,7 @@ class MyApp extends App {
     const { store, categories, asPath, pageProps, Component } = this.props
 
     return (
-      <Container>
+      <>
         <Provider store={store}>
           <div>
             <Header
@@ -56,7 +56,7 @@ class MyApp extends App {
             <ToastContainer />
           </div>
         </Provider>
-      </Container>
+      </>
     )
   }
 }
