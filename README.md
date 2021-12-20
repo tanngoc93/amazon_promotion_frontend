@@ -1,6 +1,6 @@
 ## Code Status
 
-[![CircleCI](https://circleci.com/gh/tanngoc93/CouponFrontend.svg?style=shield)](https://circleci.com/gh/tanngoc93/CouponFrontend/tree/master) [![codecov](https://codecov.io/gh/tanngoc93/CouponFrontend/branch/master/graph/badge.svg)](https://codecov.io/gh/tanngoc93/CouponFrontend)
+[![CircleCI](https://circleci.com/gh/tanngoc93/coupon_frontend.svg?style=shield)](https://circleci.com/gh/tanngoc93/coupon_frontend/tree/master) [![codecov](https://codecov.io/gh/tanngoc93/coupon_frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/tanngoc93/coupon_frontend)
 
 ## Visit [TooCoolCats.com/Coupons](https://toocoolcats.com/coupons)
 
