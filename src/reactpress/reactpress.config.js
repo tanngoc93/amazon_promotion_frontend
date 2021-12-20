@@ -1,7 +1,7 @@
 module.exports = {
   // used by ./services/wpapi to create api url
-  blogAPI: process.env.BLOG_API,
-  couponAPI: process.env.COUPON_API,
+  blogAPI: process.env.BLOG_API || "",
+  couponAPI: process.env.COUPON_API || "",
   assetPrefix: process.env.PREFIX,
   site: {
     name: process.env.SITE_NAME,
