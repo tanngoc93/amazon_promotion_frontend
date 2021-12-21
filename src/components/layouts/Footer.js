@@ -84,7 +84,7 @@ const Footer = (props) => {
                 <h5 className="widget-title">Privacy & Cookies</h5>
                 <div className="widget_text">
                   <font size="2">
-                    This site uses cookies. By continuing to use this website, you agree to their use. To find out more, including how to control cookies, see here: <a href="https://www.toocoolcats.com/pages/privacy-policy/">Privacy Policy &amp; Disclaimer </a>
+                    This site uses cookies. By continuing to use this website, you agree to their use. To find out more, including how to control cookies, see here: <a href="https://toocoolcats.com/pages/privacy-policy/">Privacy Policy &amp; Disclaimer </a>
                   </font>
                 </div>
               </div>
