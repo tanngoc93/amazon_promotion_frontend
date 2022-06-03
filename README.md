@@ -1,15 +1,12 @@
 ## Code Status
 
-[![CircleCI](https://circleci.com/gh/tanngoc93/coupon_frontend.svg?style=shield)](https://circleci.com/gh/tanngoc93/coupon_frontend/tree/master) [![codecov](https://codecov.io/gh/tanngoc93/coupon_frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/tanngoc93/coupon_frontend)
+[![CircleCI](https://circleci.com/gh/tanngoc93/amazon_promotion_frontend.svg?style=shield)](https://circleci.com/gh/tanngoc93/amazon_promotion_frontend/tree/master) [![codecov](https://codecov.io/gh/tanngoc93/amazon_promotion_frontend/branch/master/graph/badge.svg)](https://codecov.io/gh/tanngoc93/amazon_promotion_frontend)
 
-## Visit [TooCoolCats.com/Coupons](https://toocoolcats.com/coupons)
-
-Pet blog is a dedicated dog news source, you can also find many Pet supplies's discount codes
 
 ### Prerequisites
 
-* Node version: 10.x
-* Docker/Docker Compose(Optional)
+* Node version: 14.x
+* Docker/Docker Compose
 
 ## Built with
 
@@ -23,7 +20,3 @@ Pet blog is a dedicated dog news source, you can also find many Pet supplies's d
 * [Docker Swarm](https://docs.docker.com/engine/swarm/) - Cluster management integrated with Docker Engine
 * [Cloudflare](https://www.cloudflare.com/) - CDN services, DDoS mitigation, Internet security and distributed domain name server
 * [CircleCI](https://circleci.com/) - Continuous Integration and Delivery
-
-## Authors
-
-* **Ngoc Nguyen Tan** - *Individual project* - [NgocNT](https://github.com/tanngoc93)
