@@ -1,7 +1,7 @@
 defaults: &defaults
   working_directory: ~/buildbox
   docker:
-    - image: circleci/node:14.15.1-stretch-browsers
+    - image: cimg/node:16.15.1
 
 version: 2.0
 jobs:
@@ -10,19 +10,19 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker:
-          version: 19.03.13
+          version: 20.10.14
 
       - run:
-          name: Login to Docker Registry
+          name: Login to Docker registry
           command: docker login -u $DOCKER_USER -p $DOCKER_PASS
 
       - run:
-          name: Build Docker Image
-          command: docker build -t tanngoc93/com.thedogpaws:latest .
+          name: Build image
+          command: docker build -t tanngoc93/coupon.frontend:latest .
 
       - run:
-          name: Push Docker Image to Docker Registry 
-          command: docker push tanngoc93/com.thedogpaws:latest
+          name: Push image to Docker registry 
+          command: docker push tanngoc93/coupon.frontend:latest
 
 workflows:
   version: 2
